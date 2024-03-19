@@ -38,9 +38,9 @@ a:hover {
   text-decoration: underline;
 }
 
-header {
+.header {
   background-color: var(--primary-color);
-  padding: 48px 0;
+  padding: calc(var(--space) * 2) 0;
   border-bottom: var(--secondary-color) 6px solid;
 }
 
@@ -64,7 +64,7 @@ nav {
 }
 
 nav > a:not(:first-of-type){
-  margin-left: 24px;
+  margin-left: calc(var(--space));
 }
 
 nav > a.logo {
@@ -73,7 +73,7 @@ nav > a.logo {
 }
 
 main > section, main > article {
-  margin-bottom: 96px;
+  margin-bottom: calc(var(--space) * 4);
   box-shadow: 4px 4px 10px var(--gray);
   background-color: var(--white);
 }
@@ -94,7 +94,7 @@ main > section, main > article {
   font-size: 2rem;
   font-weight: 700;
   text-shadow: var(--white) 0px 0px 10px, var(--white) 0px 0px 20px, var(--gray) 2px 2px 2px;
-  padding: 0 48px;
+  padding: 0 calc(var(--space) * 2);
   margin: 0;
 }
 
@@ -109,20 +109,20 @@ main > section, main > article {
 }
 
 main article {
-  padding: 48px 96px;
+  padding: calc(var(--space) * 2) calc(var(--space) * 4);
 }
 
 main p {
   line-height: 1.75;
-  margin-bottom: 48px;;
+  margin-bottom: calc(var(--space) * 2);
 }
 
 main > article img {
   float: left;
   width: 300px;
   height: auto;
-  margin-right: 24px;
-  margin-bottom: 6px;
+  margin-right: var(--space);
+  margin-bottom: calc(var(--space) / 4);
 }
 
 footer {
@@ -130,6 +130,6 @@ footer {
   background-color: var(--gray);
   text-align: center;
   text-transform: uppercase;
-  padding: 24px 0;
+  padding: calc(var(--space)) 0;
   color: var(--off-white);
 }
