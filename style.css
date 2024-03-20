@@ -30,8 +30,10 @@ h1, h2 {
   text-align: center;
 }
 
-.logo, .link {
+.header__logo, .header__link {
   text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--off-white);
 }
 
 a:hover {
@@ -44,16 +46,11 @@ a:hover {
   border-bottom: var(--secondary-color) 6px solid;
 }
 
-header a {
-  font-size: 1.5rem;
-  color: var(--off-white);
-}
-
 .link--main-text {
   color: var(--danger-color);
 }
 
-main > article, nav{
+.article, nav{
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -63,16 +60,16 @@ nav {
   display: flex;
 }
 
-nav > a:not(:first-of-type){
+.header__link {
   margin-left: calc(var(--space));
 }
 
-nav > a.logo {
+.header__logo {
   margin-right: auto;
   text-transform: uppercase;
 }
 
-main > section, main > article {
+.jumbotron, .article {
   margin-bottom: calc(var(--space) * 4);
   box-shadow: 4px 4px 10px var(--gray);
   background-color: var(--white);
@@ -108,7 +105,7 @@ main > section, main > article {
   cursor: pointer;
 }
 
-main article {
+.article {
   padding: calc(var(--space) * 2) calc(var(--space) * 4);
 }
 
@@ -117,7 +114,7 @@ main p {
   margin-bottom: calc(var(--space) * 2);
 }
 
-main > article img {
+.main--image {
   float: left;
   width: 300px;
   height: auto;
